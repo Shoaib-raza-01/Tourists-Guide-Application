@@ -1,18 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+
+
+    <EditText
+        android:id="@+id/emailAdd"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter your email address"
+        android:paddingStart="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:paddingStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0f0"
+        android:text="Sign in" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Don't have an account?      " />
+
+        <TextView
+            android:id="@+id/CreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#0f0"
+            android:clickable="true"
+            android:text="CREATE ONE"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/googleSignIn"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="22dp"
+        app:cardPreventCornerOverlap="true" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            app:srcCompat="@drawable/google" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="70dp"
+            android:layout_gravity="start|center"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="Sign In using Google" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/facebookSignIn"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="22dp"
+        app:cardPreventCornerOverlap="true" >
+
+        <ImageView
+            android:id="@+id/facebookView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            app:srcCompat="@drawable/facebook" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end|center"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="Sign In using Facebook" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
