@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountpage">
+
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your first name"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:paddingStart="20dp"
+        android:inputType="textPersonName"
+        android:hint="Enter your last name"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:paddingStart="20dp"
+        android:inputType="textPersonName"
+        android:hint="Enter your email address"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your password"
+        android:layout_gravity="center"
+        android:paddingStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/RePassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Re-enter your password"
+        android:layout_gravity="center"
+        android:paddingStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#0f0"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Already have an account?      " />
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#0f0"
+            android:clickable="true"
+            android:text="LOG IN"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>
