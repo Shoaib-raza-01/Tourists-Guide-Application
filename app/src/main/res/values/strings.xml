@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TouristsGuideApplication</string>
+    <string name="welcome_to_your_own_free_tour_guide_application">WelCome To your own free <br> Tour Guide Application</br></string>
 </resources>
